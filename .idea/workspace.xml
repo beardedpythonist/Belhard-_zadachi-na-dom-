@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ea58882-ca3d-4adf-a73e-e00c46933f33" name="Changes" comment="ДЗ 2011 три задачи, в точи числе скобки">
-      <change afterPath="$PROJECT_DIR$/2311" afterDir="false" />
+    <list default="true" id="3ea58882-ca3d-4adf-a73e-e00c46933f33" name="Changes" comment="задачи на функции">
       <change afterPath="$PROJECT_DIR$/mail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2011.py" beforeDir="false" afterPath="$PROJECT_DIR$/2011.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +17,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668956890422</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="задачи на функции">
+      <created>1669191635214</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669191635214</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="изучаю Hexlet" />
     <MESSAGE value="ДЗ 2011 три задачи, в точи числе скобки" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 2011 три задачи, в точи числе скобки" />
+    <MESSAGE value="задачи на функции" />
+    <option name="LAST_COMMIT_MESSAGE" value="задачи на функции" />
   </component>
 </project>
