@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ea58882-ca3d-4adf-a73e-e00c46933f33" name="Changes" comment="изучаю Hexlet" />
+    <list default="true" id="3ea58882-ca3d-4adf-a73e-e00c46933f33" name="Changes" comment="ДЗ 2011 три задачи, в точи числе скобки">
+      <change afterPath="$PROJECT_DIR$/2311" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2011.py" beforeDir="false" afterPath="$PROJECT_DIR$/2011.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,9 +32,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "C:/Users/ivang/Belhard_DZ"
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/Python_белхард/DZ2011"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Python_белхард\DZ2011" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +58,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668762307634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ДЗ 2011 три задачи, в точи числе скобки">
+      <created>1668956664785</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668956664785</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ДЗ 2011 три задачи, в точи числе скобки">
+      <created>1668956890422</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668956890422</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -62,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="изучаю Hexlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="изучаю Hexlet" />
+    <MESSAGE value="ДЗ 2011 три задачи, в точи числе скобки" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 2011 три задачи, в точи числе скобки" />
   </component>
 </project>
