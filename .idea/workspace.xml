@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="3ea58882-ca3d-4adf-a73e-e00c46933f33" name="Changes" comment="задачи на функции" />
+=======
+    <list default="true" id="3ea58882-ca3d-4adf-a73e-e00c46933f33" name="Changes" comment="изучаю Hexlet" />
+>>>>>>> 1b2705f637773627e1644ac3f1fae333c03000d3
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,12 +19,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
+=======
+>>>>>>> 1b2705f637773627e1644ac3f1fae333c03000d3
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -33,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "E:/Python_белхард/DZ2011"
@@ -43,6 +51,11 @@
       <recent name="E:\Python_белхард\DZ2011" />
     </key>
   </component>
+=======
+    "last_opened_file_path": "C:/Users/ivang/Belhard_DZ"
+  }
+}]]></component>
+>>>>>>> 1b2705f637773627e1644ac3f1fae333c03000d3
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,6 +72,7 @@
       <option name="project" value="LOCAL" />
       <updated>1668762307634</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="ДЗ 2011 три задачи, в точи числе скобки">
       <created>1668956664785</created>
       <option name="number" value="00002" />
@@ -95,6 +109,9 @@
       <updated>1669192220739</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+=======
+    <option name="localTasksCounter" value="2" />
+>>>>>>> 1b2705f637773627e1644ac3f1fae333c03000d3
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,8 +127,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="изучаю Hexlet" />
+<<<<<<< HEAD
     <MESSAGE value="ДЗ 2011 три задачи, в точи числе скобки" />
     <MESSAGE value="задачи на функции" />
     <option name="LAST_COMMIT_MESSAGE" value="задачи на функции" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="изучаю Hexlet" />
+>>>>>>> 1b2705f637773627e1644ac3f1fae333c03000d3
   </component>
 </project>
