@@ -1,0 +1,138 @@
+ # задача 6,26
+n = int(input())
+
+z = 0
+q = 9
+while n != 0:
+    y = n % 10
+    if y > z:
+        z = y
+    if y < q:
+        q = y
+    n = n // 10
+print(z)
+print(q)
+
+
+ # задача  6,45
+ a = int(input())
+b = int(input())
+c = int(input())
+while True:
+    if a > b:
+        razni = a - b
+        a = razni
+        if razni == b:
+            break
+    if b > a:
+        razni = b - a
+        b = razni
+        if razni == a:
+            break
+a = razni
+b = c
+while True:
+    if a > b:
+        razni = a - b
+        a = razni
+        if razni == b:
+            break
+    if b > a:
+        razni = b - a
+        b = razni
+        if razni == a:
+            break
+print(razni)
+
+
+ #  задача 6.103
+a = int(input())
+b = int(input())
+x = a
+p = int
+q = int
+while x >= 1:
+    if a % x == 0 and b % x == 0:
+        p = a / x
+        q = b / x
+        break
+    x = x - 1
+print(p, q)
+
+
+ # задача  7,41
+ n = int(input('количество учеников'))   # колич учеников
+count5 = 0
+count4 = 0
+count3 = 0
+count2 = 0
+while n > 0:
+    x = int(input())   # оценка
+    if x == 5:
+        count5 += 1
+    if x == 4:
+        count4 += 1
+    if x == 3:
+        count3 += 1
+    if x == 2:
+        count2 += 1
+    n = n - 1
+print('пятерок:', count5, 'четверок:', count4, 'троек:', count3, 'двоек:', count2)
+
+
+
+#  задача 7,53
+n = int(input('количество номеров '))
+maxi = int(input())
+mini = int(input())
+count = 0
+y = 0
+q = 0
+
+while n > 0:
+    x = int(input())
+    count = count + 1
+    if x >= maxi:
+        maxi = x
+        y = count
+    if x <= mini:
+        mini = x
+        q = count
+    mini = x
+    n -= 1
+print(y, q)
+
+
+   # задача 7,67
+n = int(input('количество пар '))
+max_summa = 0
+min_poiz = 0
+x = 0
+while n > 0:
+    a = int(input())
+    b = int(input())
+    if a + b > max_summa:
+        max_summa = a + b
+    if x < min_poiz:
+        min_poiz = x
+    else:
+        min_poiz = x
+    x = a * b
+    n -= 1
+print(max_summa, min_poiz)
+
+
+   # задача  6,5
+n = 5
+count = 1
+pred = int
+while n > 0:
+    x = int(input())
+    while x == pred:
+        count += 1
+        break
+    pred = x
+    n = n - 1
+print(count)
+
+

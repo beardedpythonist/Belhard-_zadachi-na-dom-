@@ -1,0 +1,260 @@
+# задача 12,25 А
+n = 12
+m = 10
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+for q in range(n):
+    for z in range(m):
+        matrix[q][z] = z + 1 +(q * 10)
+for i in range(n):
+    for j in range(m):
+        print(matrix[i][j], end=' ')
+    print()
+
+# задача 12,25 Б
+n = 10
+m = 12
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+for q in range(n):
+    for z in range(m):
+        matrix[q][z] = z + 1 + matrix[q - 1][-1]
+for i in range(m):
+    for j in range(n):
+        print(matrix[j][i], end=' ')
+    print()
+
+задача 12,25 В
+n = 12
+m = 10
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+for q in range(n):
+    for z in range(m):
+        matrix[q][z] = m - z + matrix[q - 1][0]
+for i in range(n):
+    for j in range(m):
+        print(matrix[i][j], end=' ')
+    print()
+
+задача 12,25 Г
+n = 10
+m = 12
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+for q in range(n):
+    for z in range(m):
+        matrix[q][z] = m - z + matrix[q - 1][0]
+for i in range(m):
+    for j in range(n):
+        print(matrix[j][i], end=' ')
+    print()
+
+
+ задача 12,25 Д
+n = 10
+m = 12
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+
+for q in range(n):
+    for z in range(m):
+            matrix[q][z] = z + 1 + matrix[q - 1][0]
+            if q % 2 != 0:
+                matrix[q][z] = (m * (q + 1)) - z
+for i in range(n):
+    for j in range(m):
+        print(matrix[i][j], end=' ')
+    print()
+
+задача  12,25 Е
+n = 10
+m = 12
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+
+for q in range(n):
+    for z in range(m):
+            matrix[q][z] = z + 1 + matrix[q - 1][0]
+            if q % 2 != 0:
+                matrix[q][z] = (m * (q + 1)) - z
+for i in range(m):
+    for j in range(n):
+        print(matrix[j][i], end=' ')
+    print()
+
+
+задача 12,25 Ж
+n = 12
+m = 10
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+
+for q in range(n):
+    for z in range(m):
+            matrix[q][z] = z + 1 + matrix[q - 1][-1]
+
+matrix.reverse()
+for i in range(n):
+    for j in range(m):
+        print(matrix[i][j], end=' ')
+    print()
+
+задача 12,25 З
+n = 10
+m = 12
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+
+for q in range(n):
+    for z in range(m):
+            matrix[q][z] = z + 1 + matrix[q - 1][-1]
+
+matrix.reverse()
+for i in range(m):
+    for j in range(n):
+        print(matrix[j][i], end=' ')
+    print()
+
+задача 12,25 И
+
+n = 12
+m = 10
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+
+for q in range(n):
+    for z in range(m):
+            matrix[q][z] = z + 1 + matrix[q - 1][-1]
+for c in range(n):
+    matrix[c].reverse()
+matrix.reverse()
+for i in range(n):
+    for j in range(m):
+        print(matrix[i][j], end=' ')
+    print()
+
+
+задача 12,25 К
+n = 10
+m = 12
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+
+for q in range(n):
+    for z in range(m):
+            matrix[q][z] = z + 1 + matrix[q - 1][-1]
+
+for r in range(n):
+    matrix[r].reverse()
+matrix.reverse()
+
+for i in range(m):
+    for j in range(n):
+        print(matrix[j][i], end=' ')
+    print()
+
+
+задача 12.28
+#n - размерность матрицы n x n
+#mat - результирующая матрица
+#st - текущее значение-счетчик для записи в матрицу
+#m - коеффициент, используемый для заполнения верхней
+#матрицы последующих витков, т.к. одномерные матрицы
+#следующих витков имеют меньше значений
+n = int(input())
+mat = [[0]*n for i in range(n)]
+st, m = 1, 0
+# Заранее присваиваю значение центральному элементу
+# матрицы
+mat[n//2][n//2]=n*n
+for v in range(n//2):
+    #Заполнение верхней горизонтальной матрицы
+    for i in range(n-m):
+        mat[v][i+v] = st
+        st+=1
+        #i+=1
+    #Заполнение правой вертикальной матрицы
+    for i in range(v+1, n-v):
+        mat[i][-v-1] = st
+        st+=1
+        #i+=1
+    #Заполнение нижней горизонтальной матрицы
+    for i in range(v+1, n-v):
+        mat[-v-1][-i-1] =st
+        st+=1
+        #i+=1
+    #Заполнение левой вертикальной матрицы
+    for i in range(v+1, n-(v+1)):
+        mat[-i-1][v]=st
+        st+=1
+        #i+=1
+    #v+=1
+    m+=2
+#Вывод результата на экран
+for i in mat:
+    print(*i)
+
+# задача на поиск мак числа в матрице
+n = 5
+m = 5
+import random
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+x = 0
+y = 0
+for i in range(n):
+    for j in range(m):
+        matrix[i][j] = random.randint(100, 500)
+spis_max = []
+for i in matrix:
+    spis_max.append(max(i))
+max_max = max(spis_max)
+
+print(max_max, spis_max.index(max_max), matrix[spis_max.index(max_max)].index(max_max))
+for i in range(n):
+    for j in range(m):
+        print(matrix[i][j], end=' ')
+    print()
+
+
+ # задача сортировка матрицы
+ import random
+n = 4
+m = 5
+matrix = [0] * n    #  создание матрицы
+for c in range(n):
+    matrix[c] = [0] * m
+ls_new =[]
+for i in range(n):    # заполнение случ числами
+    for j in range(m):
+        matrix[i][j] = random.randint(100, 500)
+        ls_new.append(matrix[i][j])
+
+for i in range(0, len(ls_new), 1): # сравнение
+    for j in range(i + 1, len(ls_new), 1):
+        if ls_new[i] > ls_new[j]:
+            ls_new[i], ls_new[j] = ls_new[j], ls_new[i]
+count = 0
+for a in range(n):    # заполнение старой матрицы осортированным списком
+    for b in range(m):
+        matrix[a][b] = ls_new[count]
+        count += 1
+
+for i in range(m):    # печать
+    for j in range(n):
+        print(matrix[j][i], end=' ')
+    print()
+
+

@@ -3,7 +3,7 @@
 # s = s.replace(' ', '')
 # ls = s.split('+')
 # for c in range(len(ls)):
-#     ls[c] =  int(ls[c])
+#     ls[c] = int(ls[c])
 # x = sum(ls)
 # print(x)
 
@@ -24,7 +24,6 @@
 # print(sum(ls))
 
 ## задача 9,184
-<<<<<<< HEAD
 # s = '0()000'
 # count = 0
 # for c in range(len(s)):
@@ -41,21 +40,3 @@
 # else:
 #     print('расставлены верно')
 #
-=======
-s = '0()000'
-count = 0
-for c in range(len(s)):
-    if s[c] == '(':
-        count += 1
-    if s[c] == ")":
-        count -= 1
-    if c == len(s) - 1 and count >= 1:
-        print('расставлены неверно, количество неверных открывающих скобок:', count)
-        break
-    if count < 0:
-        print('расставлены неверно, позиция первой неверной закрывающей скобки:', c)
-        break
-else:
-    print('расставлены верно')
-
->>>>>>> 1b2705f637773627e1644ac3f1fae333c03000d3

@@ -1,0 +1,265 @@
+#  задача -а  11,12
+ls = []
+z = 300
+while len(ls) <= 20:
+    if z % 13 == 0 or z % 13 == 0:
+        ls.append(z)
+    z += 1
+print(ls)
+
+#  задача -б  11,12
+ls = []
+z = 1
+
+while len(ls) <= 29:
+    count = 0
+    for q in range(1, z + 1):
+        if z % q == 0:
+            count += 1
+    if count == 2:
+        ls.append(z)
+    z += 1
+print(ls)
+
+
+
+#  задача 11,13
+n = int(input())
+ls = []
+
+for c in range(len(ls)):
+    if n == c:
+        print(ls[c])
+
+задача 11,14
+ls = [1, 4, 6, 8, 9]
+ls.reverse()
+print(ls)
+
+
+задача 11,15
+n = int(input())
+ls = [1, 4, 6, 8, 9, 10]
+for c in range(len(ls)):
+    if n == c:
+        x = ls[c] ** 2
+        print(x)
+a = int(input())
+b = int(input())
+z = float((ls[a] + ls[b]) / 2)
+print(z)
+
+
+зад 11,16
+s = int(input())
+k = int(input())
+ls = [1, 4, 7, 8, -9]
+
+for c in range(len(ls)):
+    if s == c:
+        if ls[c] > 0:
+            print('число положительное')
+        else:
+            print('число отрицательное')
+    if k == c:
+        if ls[c] % 2 == 0:
+            print('число четное')
+        else:
+            print('нечетное')
+
+if ls[k] > ls[s]:
+    print('элемент K больше')
+else:
+    print('элемент S больше')
+
+
+задача 11,17
+ls = [7, 3, 5, 7, 9, 90, 56]
+ls1 = []
+a = int(input())
+ls2 = []
+ls3 = []
+for c in range(len(ls)):
+
+
+
+задача  11,18
+
+ls = [7, 3, 5, 7, 9, 90, 56, 5, 7, 2, 1]
+ls1 = []
+ls2 = []
+b = int(input())
+ls3 = []
+for c in range(len(ls)):
+    x = ls[c] - 20
+    ls1.append(x)
+    y = ls[c] * ls[-1]
+    ls2.append(y)
+    z = ls[c] * b
+    ls3.append(z)
+print(*ls1, *ls2, *ls3)
+
+
+
+задача 11,19
+ls = [7, 3, 5, 7, 9, 90, 56, 5, 7, 2, 1]
+k1 = int(input())
+k2 = int(input())
+s1 = int(input())
+s2 = int(input())
+total = 0
+total1 = 1
+total_kw = 0
+total6 = 0
+sred_arif = 0
+for c in range(len(ls)):
+    total += ls[c]
+    total1 *= ls[c]
+    x = ls[c] ** 2
+    total_kw += x
+    sred_arif = total / len(ls)
+for q in range(0,6):
+    total6 += ls[q]
+totalk = 0
+for w in range(k1, k2 + 1):
+    totalk += ls[w]
+totals = 0
+count  = 0
+for s in range(s1, s2 + 1):
+    totals += ls[s]
+    count += 1
+sred_arifs = totals / count
+print(total)
+print(total1)
+print(total_kw)
+print(total6)
+print(totalk)
+print(sred_arif)
+print(sred_arifs)
+
+
+
+задача 11,36
+ls = [7, 3, 5, -7, 9, 90, -56, 5, 7, 2, 1]
+for c in range(len(ls)):
+    if ls[c] >= 0:
+        print(ls[c], end=' ')
+print()
+for c in range(len(ls)):
+    if ls[c] < 100:
+        print(ls[c], end=' ')
+
+задача 11,45
+ls = [7, 3, 5, -7, 9, 90, -56, 5, 7, 2, 1]
+for c in range(len(ls)):
+    if c % 2 == 0:
+        print(ls[c], end=' ')
+print()
+for c in range(len(ls)):
+    if c % 2 == 1:
+        print(ls[c], end=' ')
+
+
+задача 11,103
+ls = [7, 3, -5, -7, 9, 90, -56, 5, 7, -2, -1, -10, -7, 5]
+count = 0
+for c in range(len(ls)):
+    if c == len(ls) - 1:
+        break
+    else:
+        if ls[c] * ls[c + 1] < 0:
+            count += 1
+print(count)
+
+
+задача 11,104
+ls = [7, 3, -10, -10, -56, 58, 500, -2, -1, 5]
+ls.sort()
+print(ls)
+
+count = 1
+count2  = 1
+for c in range(len(ls)):
+    if c == len(ls) - 1:
+        break
+    if ls[c] == ls[c + 1]:
+        count += 1
+    if ls[c] - ls[c + 1] != 0:
+        count2 += 1
+print(count)
+print(count2)
+
+задача 11,105
+count2  = 1
+for c in range(len(ls)):
+    if c == len(ls) - 1:
+        break
+    if ls[c] - ls[c + 1] != 0:
+        count2 += 1
+
+print(count2)
+
+
+задача 11,106
+ls = [7, 3, -10, -10, -56, 58, 500, -2, -1, 6, 5]
+ls.sort()
+print(ls)
+count = 0
+maxi = 0
+for c in range(len(ls)):
+    if ls[c] % 2 == 1:
+        count += 1
+    if ls[c] % 2 == 0:
+        if count > maxi:
+            maxi = count
+            count = 0
+print(maxi)
+
+
+
+# печать матрицы:
+
+mas = []
+for i in range(0, 7, 1):
+    mas.append([])
+    for j in range(0, 7, 1):
+        mas[i].append(0)
+
+# for i in range(0, 7, 1):   #другой вариант
+#     print(mas[i])
+#
+
+
+
+
+
+# for i in range(0, 7, 1):
+#     for j in range(0, 7, 1):
+#         if (i <= j and i <= len(mas) - 1 -j) or (i >= j and i >=len(mas)-1 -j):
+#             mas[i][j] = 1
+#
+#         print(mas[i][j], end='\t')
+#     print()
+
+
+print('__________________')
+#
+# for i in range(0, 7, 1):
+#     for j in range(0, 7, 1):
+#         if i == 3 or j == 3:
+#             mas[i][j] = 1
+#         print(mas[i][j], end='\t')
+#     print()
+#
+# print('__________________')
+#
+# for i  in range(0, len(mas)):
+#     mas[i][i] = 1
+#     mas[i][len(mas) -1 - i] = 1
+#     for j in range(0, len(mas)):
+#         if i == j:
+#             mas[i][j] = 1
+#         if i == 3 or j == 3:
+#             mas[i][j] = 1
+#         print(mas[i][j], end='\t')
+#     print()

@@ -1,0 +1,22 @@
+
+from tkinter import *
+root = Tk()
+c = Canvas(root, width= 600, height =400, bg='white')
+c.pack()
+ball = c.create_oval(0, 100, 50, 150, fill='yellow')
+def motion():
+    y = -4 / (c.coords(ball)[0] + 1)
+    c.move(ball, 0.25, y)
+    if c.coords(ball)[2] < 300:
+        root.after(5, motion)
+    else:
+        motion_back()
+def motion_back():
+    y = 5 / (c.coords(ball)[0] + 1)
+    c.move(ball, 0.25, y)
+    if c.coords(ball)[2] >= 100:
+        root.after(5, motion_back)
+    else:
+        motion()
+motion()
+root.mainloop()

@@ -1,0 +1,81 @@
+задача № 12,31
+
+import random as r
+n = int(input())
+m = int(input())
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+ls = []
+while len(ls) != n * m:
+    x = r.randint(0,16)
+    if x in ls:
+        x = r.randint(0, 16)
+        continue
+    ls.append(x)
+count = 0
+for q in range(n):
+    for z in range(m):
+        matrix[q][z] = ls[count]
+        count += 1
+for q in range(n):
+    for z in range(m):
+        print(matrix[q][z], end=' ')
+    print()
+print(ls)
+
+задача 12,186
+import random as r
+n = int(input())
+m = int(input())
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+fl = True
+for q in range(n):
+    for z in range(m):
+        matrix[q][z] = (q + z) * (-1)
+for q in range(n - 1):
+    for z in range(m - 1):
+        if matrix[q][q] <= matrix[q + 1][q + 1]:
+            fl = True
+        else:
+            fl = False
+            break
+for q in range(n):
+    for z in range(m):
+        print(matrix[q][z], end=' ')
+    print()
+print(matrix[1])
+print(fl)
+
+ # задача 12,187
+
+ import random as r
+n = int(input())
+m = int(input())
+matrix = [0] * n
+for c in range(n):
+    matrix[c] = [0] * m
+ls = []
+fl = True
+for q in range(n):
+    for z in range(m):
+        matrix[q][z] = (z + 1 + q * m )
+        x = matrix[q][m - 1 - q]
+    ls.append(x)
+for c in range(len(ls) - 1):
+    if ls[c] > ls[c + 1]:
+        fl = True
+    else:
+        fl = False
+for q in range(n):
+    for z in range(m):
+        print(matrix[q][z], end=' ')
+    print()
+print('_____')
+print(ls)
+print('_____')
+print(fl)
+
+

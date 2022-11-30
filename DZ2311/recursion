@@ -1,5 +1,4 @@
 
-
 n = 9123
 def obr(n):
     while n > 0:
@@ -8,5 +7,7 @@ def obr(n):
         obr(n // 10)
         return
 
-
 obr(n)
+
+
+
